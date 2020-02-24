@@ -5,7 +5,7 @@ using namespace std;
 
 class Node {
  public:
-  Node(char);
+  Node();
   ~Node();
   void setRight(Node*);
   void setLeft(Node*);
@@ -13,12 +13,12 @@ class Node {
   Node* getRight();
   Node* getLeft();
   Node* getNext();
-  void setData(char);
-  char getData();
+  void setData(char*);
+  char* getData();
  private:
   Node* left;
   Node* right;
   Node* next;
-  char data;
+  char* data;
 };
 #endif

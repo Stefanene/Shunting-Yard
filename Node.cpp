@@ -5,9 +5,9 @@
 
 using namespace std;
 
-Node::Node(char indata) {
+Node::Node() {
   //constructor
-  data = indata;
+  data = NULL;
   right = NULL;
   left = NULL;
   next = NULL;
@@ -18,7 +18,7 @@ Node::~Node() {
 }
 
 //setters
-void Node::setData(char newData) {
+void Node::setData(char* newData) {
   data = newData;
 }
 
@@ -35,7 +35,7 @@ void Node::setNext(Node* newNext) {
 }
 
 //getters
-char Node::getData() {
+char* Node::getData() {
   return data;
 }
 
